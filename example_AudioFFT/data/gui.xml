@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<param>
+	<Audio>
+		<Start>0</Start>
+		<Stop>0</Stop>
+		<Reset>0</Reset>
+	</Audio>
+	<FFT>
+		<FFT__SoftGain>1</FFT__SoftGain>
+		<FFT__k_smooth>0.95</FFT__k_smooth>
+		<FFT__dt_smooth_2_N>167</FFT__dt_smooth_2_N>
+		<FFT__dt_smooth_2_A>340</FFT__dt_smooth_2_A>
+		<FFT__b_HanningWindow>1</FFT__b_HanningWindow>
+	</FFT>
+	<DrawFFT>
+		<DrawFFT:ContentsId>0</DrawFFT:ContentsId>
+	</DrawFFT>
+	<ArtSin>
+		<ArtSin_Band_min__A>1</ArtSin_Band_min__A>
+		<ArtSin_Band_max__A>42.4694</ArtSin_Band_max__A>
+		<ArtSin_Band_min__N>1</ArtSin_Band_min__N>
+		<ArtSin_Band_max__N>16.551</ArtSin_Band_max__N>
+		<ArtSin_PhaseMap_k>1.70408</ArtSin_PhaseMap_k>
+		<b_PhaseMap_Dynamic_N>0</b_PhaseMap_Dynamic_N>
+		<b_PhaseMap_Dynamic_A>1</b_PhaseMap_Dynamic_A>
+		<b_ArtSin_abs>0</b_ArtSin_abs>
+		<b_TukeyWindow_artSin>1</b_TukeyWindow_artSin>
+		<Tukey_alpha>0.3</Tukey_alpha>
+	</ArtSin>
+	<DrawArtSin>
+		<b_DrawArtSin_Overlay>0</b_DrawArtSin_Overlay>
+		<b_DrawArtSin_MaskUpper>0</b_DrawArtSin_MaskUpper>
+		<b_DrawArtSin_MaskLower>0</b_DrawArtSin_MaskLower>
+		<DrawArtSin:H_of_1_0>350</DrawArtSin:H_of_1_0>
+		<DrawArtSin:col_A>255, 255, 255, 140</DrawArtSin:col_A>
+		<DrawArtSin:col_N>255, 255, 255, 140</DrawArtSin:col_N>
+		<DrawArtSin:col_Mix>255, 255, 255, 140</DrawArtSin:col_Mix>
+	</DrawArtSin>
+	<misc>
+		<col_clear_fbo>20</col_clear_fbo>
+	</misc>
+</param>

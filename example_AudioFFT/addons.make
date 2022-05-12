@@ -1,0 +1,5 @@
+ofxAudioFFT
+ofxGui
+ofxNoncopyable
+ofxVboSet
+ofxXmlSettings

@@ -1,0 +1,39 @@
+/************************************************************
+************************************************************/
+of_preRelease/
+	addons/
+		ofxMyAddon/
+			src/
+				ofxMyAddon.h
+				ofxMyAddon.cpp
+				...
+			libs/
+				libwhatever/
+					src/
+						lib_implementation.h
+						lib_implementation.cpp
+						...
+					includes/
+						libwhatever.h
+						...
+					lib/
+						osx/
+							static_libwhatever.a
+						linux/
+							static_libwhatever.a
+						... // 他のプラットフォーム
+			example-anExample/
+				src/
+					main.cpp
+					ofApp.h
+					ofApp.cpp
+					... // 他のソースコード
+					
+				addons.make
+				
+				MyAddonExample.xcodeproj
+				... // 他のプラットフォーム用のプロジェクトファイル
+				
+			README.txt
+			addon_config.mk
+			license
