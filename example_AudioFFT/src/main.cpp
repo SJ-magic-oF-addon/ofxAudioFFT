@@ -3,10 +3,16 @@
 
 //========================================================================
 int main( int argc, char** argv ){
+	
 	/********************
 	********************/
-	ofSetupOpenGL(1024,768,OF_WINDOW);			// <-------- setup the GL context
-
+	//Use ofGLFWWindowSettings for more options like multi-monitor fullscreen
+	ofGLWindowSettings settings;
+	settings.setSize(1024, 768);
+	settings.windowMode = OF_WINDOW; //can also be OF_FULLSCREEN
+	
+	auto window = ofCreateWindow(settings);
+	
 	/********************
 	********************/
 	int AUDIO_IN_CHS = 2;
@@ -14,7 +20,7 @@ int main( int argc, char** argv ){
 	
 	int soundStream_Input_DeviceId = -1;
 	int soundStream_Output_DeviceId = -1;
-
+	
 	/********************
 	********************/
 	printf("---------------------------------\n");
@@ -45,7 +51,9 @@ int main( int argc, char** argv ){
 	fflush(stdout);
 	
 	/********************
-	comment out for multi-window
 	********************/
-	ofRunApp(new ofApp( soundStream_Input_DeviceId, soundStream_Output_DeviceId, AUDIO_IN_CHS, AUDIO_OUT_CHS ));
+	ofRunApp(window, make_shared<ofApp>( soundStream_Input_DeviceId, soundStream_Output_DeviceId, AUDIO_IN_CHS, AUDIO_OUT_CHS ));
+	ofRunMainLoop();
 }
+
+
